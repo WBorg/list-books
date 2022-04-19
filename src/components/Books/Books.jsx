@@ -12,6 +12,7 @@ color: #29303b;
 margin-bottom: 10px;
 margin-right: 10px;
 padding: 10px;
+display: inline-block;
 
 `
 const TitlePane = styled.div`
