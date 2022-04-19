@@ -4,6 +4,7 @@ import { Button, Card } from 'react-bootstrap';
 function Header() {
     return (
           <>
+            
             <Card>
               <Card.Header as="h5">Featured</Card.Header>
               <Card.Body>
