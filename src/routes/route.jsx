@@ -6,14 +6,14 @@ import {
     Route,
     Link
   } from "react-router-dom";
-  import PagesListBook from '../pages/List/ListBooks';
+  import PagesSearchBooks from '../pages/Search/Search';
 
   const Root = () =>{
 
     return(
         <Router>
             <Routes>
-                  <Route path="/" element={<PagesListBook />} />
+                  <Route path="/" element={<PagesSearchBooks />} />
             </Routes>
             
         </Router>
