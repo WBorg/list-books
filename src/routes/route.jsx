@@ -7,6 +7,7 @@ import {
     Link
   } from "react-router-dom";
   import PagesSearchBooks from '../pages/Search/Search';
+  import PagesFormBooks from '../pages/Form/FormBooks';
 
   const Root = () =>{
 
@@ -14,6 +15,7 @@ import {
         <Router>
             <Routes>
                   <Route path="/" element={<PagesSearchBooks />} />
+                  <Route path="/form" element={<PagesFormBooks />} />
             </Routes>
             
         </Router>

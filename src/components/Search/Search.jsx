@@ -1,9 +1,11 @@
 
+import { Link } from 'react-router-dom';
 
 import React, { useEffect, useState} from 'react';
 import searchCss from './search.module.css'
 import axios from 'axios';
 import Books from '../../components/Books/Books';
+import {Button} from 'react-bootstrap';
 
 function SearchBooks() {
     const [books, setBooks] = useState([]);
@@ -34,6 +36,7 @@ function SearchBooks() {
         <>
          <header className={searchCss.promotionSearchHeader}>
               <h1>Pesquisa de Livros</h1>
+              <Button variant="danger"><Link className={searchCss.link} to="/form">Adicionar Livro</Link></Button>
           </header>
           <input type="search"
                   className={searchCss.promotionSearchInput}

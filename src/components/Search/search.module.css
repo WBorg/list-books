@@ -23,3 +23,11 @@
     text-transform: uppercase;
     color: #ccc;
 }
+
+.link{
+    color: unset;
+    text-decoration: unset;
+}
+.link:hover{
+    color: unset;
+}

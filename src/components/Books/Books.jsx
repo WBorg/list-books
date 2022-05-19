@@ -53,6 +53,7 @@ const Books = ( {books} ) =>{
                 <TitlePane>{books.title}</TitlePane>
                 <PricePane>R$ {books.price}</PricePane>
                 <Button variant="primary">Comprar</Button>
+                <Button variant="secondary">Editar</Button>
             </ItemContainer>
         </ItemLink>
 
