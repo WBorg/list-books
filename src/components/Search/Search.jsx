@@ -36,7 +36,7 @@ function SearchBooks() {
         <>
          <header className={searchCss.promotionSearchHeader}>
               <h1>Pesquisa de Livros</h1>
-              <Button variant="danger"><Link className={searchCss.link} to="/form">Adicionar Livro</Link></Button>
+              <Button variant="danger"><Link className={searchCss.link} to="/create">Adicionar Livro</Link></Button>
           </header>
           <input type="search"
                   className={searchCss.promotionSearchInput}

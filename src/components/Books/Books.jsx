@@ -1,6 +1,8 @@
 import React from 'react';
 import {Button} from 'react-bootstrap';
 import styled from 'styled-components';
+import booksCss from './books.module.css';
+import {Link} from 'react-router-dom';
 
 const ItemContainer = styled.div`
 
@@ -47,15 +49,23 @@ const Books = ( {books} ) =>{
 
     return(
 
-        <ItemLink href={books.url} title="Clique para comprar">
             <ItemContainer>
                 <Thumbnail src={books.image}></Thumbnail>
                 <TitlePane>{books.title}</TitlePane>
                 <PricePane>R$ {books.price}</PricePane>
-                <Button variant="primary">Comprar</Button>
-                <Button variant="secondary">Editar</Button>
+                <ItemLink href={books.url} title="Clique para comprar">
+                    <Button variant="primary">Comprar</Button>
+                </ItemLink>
+                <Button 
+                    variant="secondary">
+                    <Link 
+                         className={booksCss.btnEdit} 
+                         to={`/edit/${books.id}`}>Editar
+                    </Link>
+                </Button>
             </ItemContainer>
-        </ItemLink>
+
+
 
 
 

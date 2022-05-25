@@ -15,7 +15,8 @@ import {
         <Router>
             <Routes>
                   <Route path="/" element={<PagesSearchBooks />} />
-                  <Route path="/form" element={<PagesFormBooks />} />
+                  <Route path="/create" element={<PagesFormBooks />} />
+                  <Route path="/edit/:id" element={<PagesFormBooks />} />
             </Routes>
             
         </Router>

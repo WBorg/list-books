@@ -1,0 +1,8 @@
+.btnEdit{
+  text-decoration: none;
+  color: unset;
+}
+
+.btnEdit:hover{
+  color: unset;
+}
