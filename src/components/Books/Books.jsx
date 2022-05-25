@@ -18,6 +18,7 @@ padding: 10px;
 display: inline-block;
 
 
+
 `
 const TitlePane = styled.div`
     font-weight: bold;

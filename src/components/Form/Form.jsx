@@ -7,11 +7,11 @@ import { useParams, useNavigate, Link } from 'react-router-dom';
 const initialValue = {
     title: '',
     url: '',
-    imageUrl: '',
+    image: '',
     price: 0,
   }
 
-function Form({id}) {
+  const Form = ( {id}) =>{
     
 
     const [values, setValues] = useState(id ? null: initialValue);
