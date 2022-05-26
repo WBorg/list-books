@@ -14,18 +14,28 @@ const initialValue = {
   const Form = ( {id}) =>{
     
 
-    const [values, setValues] = useState(id ? null: initialValue);
+    const [values, setValues] = useState(initialValue);
     const [acao, setAcao] = useState('Novo');
     const navigate = useNavigate();
 
     useEffect(() => {
+
         if (id) {
-          axios.get(`http://localhost:3004/books/${id}`)
-            .then((response) => {
-              setValues(response.data);
-              setAcao('Editar')
-              alert(response.data);
-            })
+          const getSearch = async () =>{
+            try{
+             const books = await  axios.get(`http://localhost:3004/books/${id}`)
+                            // .then((response) => {
+                              setValues(books.data);
+                              setAcao('Editar');
+                              console.log(books.data);
+                            // })
+            }catch(error){
+              console.log(error);
+            }
+
+
+          }
+          getSearch();
         }
       }, []);
 
@@ -61,7 +71,7 @@ const initialValue = {
                         <input type="text" name="title" id="title" onChange={onChange} value={values.title} />
                     </div>
                     <div>
-                        <label htmlFor="img"> Imagem </label>
+                        <label htmlFor="image"> Imagem </label>
                         <input type="text" name="image" id="image" onChange={onChange} value={values.image} />
                     </div>
                     <div>

@@ -15,10 +15,10 @@
       "id": 2
     },
     {
-      "title": "MongoDB para Iniciantes",
-      "image": "https://m.media-amazon.com/images/I/31NR3RRS3VL.jpg",
-      "price": 11.99,
-      "url": "https://www.luiztools.com.br/livro-mongodb-amazon",
+      "title": "The Road to React: Your journey to master plain yet pragmatic",
+      "url": "https://www.amazon.com.br/Road-Learn-React-Pragmatic-React-Js/dp/172004399X/ref=asc_df_172004399X/?tag=googleshopp00-20&linkCode=df0&hvadid=379787788238&hvpos=&hvnetw=g&hvrand=11037270358466982209&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=1001729&hvtargid=pla-561027834376&psc=1",
+      "image": "https://images-na.ssl-images-amazon.com/images/I/41MBLi5a4jL._SX384_BO1,204,203,200_.jpg",
+      "price": "330,00",
       "id": 3
     }
   ]

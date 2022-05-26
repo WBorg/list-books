@@ -3,19 +3,21 @@ import {Button} from 'react-bootstrap';
 import styled from 'styled-components';
 import booksCss from './books.module.css';
 import {Link} from 'react-router-dom';
+import {Trash} from 'phosphor-react';
 
 const ItemContainer = styled.div`
 
 border-radius: 4px;
 background-color: #cca;
 height: 140px;
-width: 262px;
+width: 295px;
 color: #29303b;
 margin-bottom: 10px;
 margin-top: 10px;
 margin-right: 10px;
 padding: 10px;
 display: inline-block;
+position: relative;
 
 
 
@@ -23,6 +25,7 @@ display: inline-block;
 const TitlePane = styled.div`
     font-weight: bold;
     margin-bottom: 5px;
+    
 
 
 `
@@ -44,7 +47,7 @@ const ItemLink = styled.a`
 
 
 
-const Books = ( {books} ) =>{
+const Books = ( {books, onClickDelete } ) =>{
    
 
 
@@ -52,18 +55,23 @@ const Books = ( {books} ) =>{
 
             <ItemContainer>
                 <Thumbnail src={books.image}></Thumbnail>
-                <TitlePane>{books.title}</TitlePane>
+                <TitlePane>{books.title.substring(0,26)}...</TitlePane>
                 <PricePane>R$ {books.price}</PricePane>
                 <ItemLink href={books.url} title="Clique para comprar">
                     <Button variant="primary">Comprar</Button>
                 </ItemLink>
-                <Button 
+                <Button className={booksCss.btnEditar}
                     variant="secondary">
                     <Link 
                          className={booksCss.btnEdit} 
                          to={`/edit/${books.id}`}>Editar
                     </Link>
                 </Button>
+                <button type="button" 
+                        className={booksCss.booksButtonDelete}
+                        onClick={onClickDelete}>
+                <Trash size={16} color="#ff0000" weight="duotone" />
+                </button>
             </ItemContainer>
 
 

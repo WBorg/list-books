@@ -6,3 +6,15 @@
 .btnEdit:hover{
   color: unset;
 }
+
+.booksButtonDelete{
+  border: unset;
+  background-color:unset;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+
+.btnEditar{
+  margin-left: 5px;
+}

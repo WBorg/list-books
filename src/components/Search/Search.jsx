@@ -10,6 +10,7 @@ import {Button} from 'react-bootstrap';
 function SearchBooks() {
     const [books, setBooks] = useState([]);
     const [search, setSearch] = useState('');
+    const [onDelete, setOnDelete] = useState(null);
 
     useEffect( ()=>{
 
@@ -26,7 +27,20 @@ function SearchBooks() {
         }
       );
 
-    }, [search] );
+    }, [search, onDelete] );
+
+    const handleDelete = async (id) => {
+
+      
+      const method = 'delete';
+      const url = `http://localhost:3004/books/${id}`;
+      await axios[method](url)
+        .then((response) => {
+          setOnDelete(id);
+          return (<>Deletando....</>)
+        });
+  
+    }
     
     
     
@@ -47,7 +61,7 @@ function SearchBooks() {
           />
               
             {books.map( (books) => (
-            <Books books={books} key={books.title} /> 
+            <Books books={books} key={books.title} onClickDelete={ () => handleDelete(books.id)} /> 
             )
             )
           }
