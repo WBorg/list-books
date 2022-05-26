@@ -82,7 +82,11 @@ const initialValue = {
                         <label htmlFor="url"> URL </label>
                         <input type="text" name="url" id="url" onChange={onChange} value={values.url} />
                     </div>
-                    <Button className={formCss.btn} variant="danger" type="submit">Salvar</Button>
+                    
+                     <Button className={formCss.btnCancelar} type="button" variant="dark" onClick={()=>navigate('/')}>Cancelar</Button>
+                     <Button className={formCss.btnSalvar} type="submit" variant="danger">Salvar</Button>
+
+                    
                </form>
            
         </section>
