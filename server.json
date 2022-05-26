@@ -3,23 +3,30 @@
     {
       "title": "Programação Web com Node.js",
       "image": "https://m.media-amazon.com/images/I/4110e7iseFL.jpg",
-      "price": 14.99,
+      "price": "14.98",
       "url": "https://www.luiztools.com.br/livro-node-amazon",
       "id": 1
     },
     {
       "title": "Node.js e Microservices",
       "image": "https://m.media-amazon.com/images/I/41CUCsnLPML.jpg",
-      "price": 14.99,
+      "price": "25,63",
       "url": "https://www.luiztools.com.br/livro-node-ii-amazon",
       "id": 2
     },
     {
-      "title": "The Road to React: Your journey to master plain yet pragmatic",
-      "url": "https://www.amazon.com.br/Road-Learn-React-Pragmatic-React-Js/dp/172004399X/ref=asc_df_172004399X/?tag=googleshopp00-20&linkCode=df0&hvadid=379787788238&hvpos=&hvnetw=g&hvrand=11037270358466982209&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=1001729&hvtargid=pla-561027834376&psc=1",
-      "image": "https://images-na.ssl-images-amazon.com/images/I/41MBLi5a4jL._SX384_BO1,204,203,200_.jpg",
-      "price": "330,00",
-      "id": 3
+      "title": "Practical Node-RED Programming: Learn powerful visual programming techniques and best practices for the web and IoT",
+      "url": "https://www.amazon.com.br/Practical-Node-RED-Programming-programming-techniques/dp/1800201591/ref=asc_df_1800201591/?tag=googleshopp00-20&linkCode=df0&hvadid=379726160779&hvpos=&hvnetw=g&hvrand=13510186839557045636&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=1001729&hvtargid=pla-1211635188398&psc=1",
+      "image": "https://images-na.ssl-images-amazon.com/images/I/41LOwnmzsVL._SX404_BO1,204,203,200_.jpg",
+      "price": "311,42",
+      "id": 4
+    },
+    {
+      "title": "Use a cabeça!: programação JavaScript",
+      "url": "https://www.amazon.com.br/cabe%C3%A7a-Programa%C3%A7%C3%A3o-JavaScript-Eric-Freeman/dp/8576089904/ref=asc_df_8576089904/?tag=googleshopp00-20&linkCode=df0&hvadid=379792215563&hvpos=&hvnetw=g&hvrand=15096540466945928967&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=1001729&hvtargid=pla-811020653400&psc=1",
+      "image": "https://images-na.ssl-images-amazon.com/images/I/51VUqKkjWFL._SX323_BO1,204,203,200_.jpg",
+      "price": "125,51",
+      "id": 5
     }
   ]
 }

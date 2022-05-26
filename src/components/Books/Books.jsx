@@ -43,6 +43,7 @@ const Thumbnail = styled.img`
 `
 const ItemLink = styled.a`
     text-decoration: none;
+    
     `
 
 
@@ -57,7 +58,7 @@ const Books = ( {books, onClickDelete } ) =>{
                 <Thumbnail src={books.image}></Thumbnail>
                 <TitlePane>{books.title.substring(0,26)}...</TitlePane>
                 <PricePane>R$ {books.price}</PricePane>
-                <ItemLink href={books.url} title="Clique para comprar">
+                <ItemLink href={books.url} title="Clique para comprar" target="_blank">
                     <Button variant="primary">Comprar</Button>
                 </ItemLink>
                 <Button className={booksCss.btnEditar}
